@@ -10,3 +10,10 @@ function nameToAttributes(drivers) {
   } )
   return split;
 }
+
+function attributesToPhrase(drivers) {
+  let phrase = drivers.map(function(d) {
+    return `${d.name} is from ${d.hometown}`
+  });
+  return phrase;
+}
